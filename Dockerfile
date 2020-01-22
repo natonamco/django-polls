@@ -1,6 +1,6 @@
 FROM python:3.7.4-alpine3.10
 
-ADD requirements.txt /app/requirements.txt
+ADD django-polls/requirements.txt /app/requirements.txt
 
 RUN set -ex \
     && apk add --no-cache --virtual .build-deps postgresql-dev build-base \
